@@ -1,0 +1,1 @@
+export type EventStatus = "QUEUED" | "PROCESSING" | "COMPLETE" | "ERROR";

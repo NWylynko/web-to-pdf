@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  database:
+    image: mongo
+    container_name: mongo-database
+    restart: unless-stopped
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: web-to-pdf
+      MONGO_INITDB_ROOT_PASSWORD: example
+    ports:
+      - "27017:27017"
